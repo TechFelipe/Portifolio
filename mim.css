@@ -1,0 +1,86 @@
+
+:root{
+    --sobre: #D9D9D9;
+    --fe: #d6d0d0;
+}
+.darkmode{
+    --sobre: #202020;
+    --fe: #161515;
+}
+.nome-hide{
+    display: none;
+}
+#sobre{
+    display: inline-block;
+    width: 40%;
+    margin-left: 5%;
+    margin-top: 60px;
+    background-color: var(--sobre);
+}
+#sobre p{
+    font-family: 'Minecraftia';
+    font-size: 0.7rem;
+    color: #555;
+    padding: 30px;
+    color: var(--text);
+}
+#nome{
+    display: inline-block;
+    width: 50%;
+}
+.eu{
+    position: relative;
+    left: 10%;
+}
+.fe{
+    position: relative;
+    bottom: 20px;
+    font-family: 'Minecrafter';
+    font-size: 1.5rem;
+    background-color: var(--fe);
+    color: var(--text);
+    padding: 18px;
+    border-bottom: 36px solid var(--sobre);
+}
+@media (max-width: 800px) {
+    #sobre{
+        width: 90%;
+    }
+    #sobre p{
+        font-size: 1rem;
+    }
+    #nome{
+        display: none;
+    }
+    .nome-hide{
+        display: block;
+        text-align: center;
+    }
+    .fe{
+        margin: auto;
+        width: 80%;
+    }
+    .eu{
+        position: relative;
+        left: 50%;
+    }
+}
+@media (max-width: 784px) {
+    img{
+        display: inline-block;
+    }
+}
+@media (max-width: 345px) {
+    #eu{
+        width: 80%;
+    }
+}
+@media (max-width: 339px) {
+    #modo{
+        left: 110px;
+        top: -105;
+    }
+    #troca{
+        top: 30px;
+    }
+}

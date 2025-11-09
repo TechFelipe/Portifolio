@@ -1,0 +1,340 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("Dia_Rio.jpg");
+  background-size: cover;      /* Ensures the image covers the whole screen */
+  background-repeat: no-repeat;
+  background-position: center; /* Keeps the image centered */
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  transition: 0.3s;
+}
+#titulo {
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+}
+
+#titulo::before {
+  display: block;
+  content: "Meu Portfolio";
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  font-family: 'mineplayer';
+  font-size: 5rem;
+  color: #AFADA7;
+  -webkit-text-stroke: 4px rgb(0, 0, 0);
+  text-shadow: black 0px 8px;
+}
+#titulo:after {
+  font-family: 'Minecraftia';
+  position: relative;
+  left: 16rem;
+  bottom: 10px;
+  content: "pf me doe um pix";
+  color: yellow;
+  text-shadow: #404001 0px 3px;
+  font-size: 1.6rem;
+  display: inline-block;
+  transform: rotate(343deg);
+  animation: expandContract 1.5s infinite;
+}
+
+@keyframes expandContract {
+  0%, 100% {
+    transform: rotate(343deg) scale(1);
+  }
+  50% {
+    transform: rotate(343deg) scale(1.1);
+  }
+}
+
+.btn {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  width: 305px;
+  transform: translate(-50%);
+}
+.btn>a {
+  text-decoration: none;
+  display: block;
+  height: 78px;
+  width: 400px;
+  margin-top: 3px;
+}
+.btn>a:hover {
+  border: solid 4px white;
+  z-index: 2;
+}
+.btn button {
+  width: 400px;
+  height: 78px;
+  font-family: 'Minecraftia';
+  font-size: xx-large;
+  background-color: #C6C6C6;
+  border-top: solid white 4px;
+  border-left: solid white 4px;
+  border-bottom: solid #646464 4px;
+  border-right: solid #646464 4px;
+  color: #4C4C4C;
+}
+a:hover>button {
+  width: 392px;
+  height: 70px;
+  margin-top: -2;
+  background-color: #218306;
+  border-top: solid #19BB07 6px;
+  border-left: solid #19BB07 4px;
+  border-bottom: solid #055105 6px;
+  border-right: solid #055105 4px;
+  color: white;
+}
+
+#mais {
+  margin-top: 240px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  top: 40%;
+  left: 50%;
+  width: 850px;
+}
+.left {
+  display: flex;
+  margin-left: 0px;
+  height: 62px;
+  justify-content: center;
+}
+.right {
+  position: relative;
+  bottom: 315px;
+  display: flex;
+  flex-direction: column;
+}
+
+#escuro {
+  width: 62px;
+  height: 62px;
+  position: relative;
+  right: 30px;
+}
+#troca {
+  position: relative;
+  right: 3px;
+  top: 2px;
+  transform: rotate(180deg);
+  transition: 0.3s;
+}
+#modo {
+  width: 62px;
+  height: 62px;
+  z-index: 2;
+  position: relative;
+  left: 32px;
+  opacity: 0;
+}
+.darkmode #troca {
+  transform: rotate(0deg);
+}
+.MinEu{
+  width: 209px;
+  position: relative;  
+  display: inline-block
+}
+.menor>button {
+  width: 210px;
+  height: 62px;
+  font-size: 1.5rem;
+  display: inline-block
+}
+.menor:hover>button{
+  width: 209px;
+  height: 62px;
+  background-color: #218306;
+  border-top: solid #19BB07 6px;
+  border-left: solid #19BB07 4px;
+  border-bottom: solid #055105 6px;
+  border-right: solid #055105 4px;
+  color: white;
+}
+#mais>div{
+  height: 62px;
+}
+
+/*Modo escuro*/
+.darkmode {
+  background-image: url("Noite_No_Mar.jpg");
+}
+.darkmode .btn>a:hover {
+  border: solid 4px black;
+}
+.darkmode .btn button {
+  background-color: #646464;
+  border-top: solid #C6C6C6 4px;
+  border-left: solid #C6C6C6 4px;
+  border-bottom: solid black 4px;
+  border-right: solid black 4px;
+  color: white;
+}
+.darkmode a:hover>button {
+  background-color: #055105;
+  border-top: solid #218306 6px;
+  border-left: solid #218306 4px;
+  border-bottom: solid #002d00 6px;
+  border-right: solid #002d00 4px;
+  color: white;
+}
+/* Legendas Aleatórias */
+
+#zero #titulo:after {
+  content: "Tenha Fé";
+}
+#um #titulo:after {
+  content: "HHHMMM";
+}
+#dois #titulo:after {
+  content: "Chocolate 🍫😋";
+}
+#tres #titulo:after {
+  content: "Minefólio 😎";
+}
+#quatro #titulo:after {
+  content: "Wow";
+}
+#cinco #titulo:after {
+  content: "Sorvete 🍦🍨";
+}
+#seis #titulo:after {
+  content: "Ahhhh";
+}
+#sete #titulo:after {
+  content: "0% Açucar";
+}
+#oito #titulo:after {
+  content: "Beba água";
+}
+#nove #titulo:after {
+  content: "Higenizado 🧼";
+}
+
+/* Responsívidade */
+
+@media (max-width: 800px){
+  body{    /* Ensures the image covers the whole screen */
+  background-repeat:repeat;
+  background-size: 450vh, 650vh;
+  overflow-x: hidden;
+  }
+  #titulo::before {
+  font-size: 4rem;
+}
+#titulo:after {
+  left: 8rem;
+  top: 0.5rem;
+  font-size: 1.2rem;
+}
+.btn{
+  margin-top: 60px;
+  position: relative;
+  top: 20px;
+  left: 50%;
+}
+.left {
+  display: block;
+  margin-left: 350px;
+  height: 122px;
+
+}
+.right{
+  top: 60%;
+  left: 40%;
+  width: 210px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 0px;
+}
+.btn button {
+  width: 360px;
+  height: 65px;
+}
+.btn>a {
+  height: 65px;
+  margin-top: 3px;
+  width: 360px;
+}
+a:hover>button {
+  width: 352px;
+  height: 60px;
+}
+.menor>button {
+  width: 270px;
+  height: 60px;
+  font-size: 1.5rem;
+}
+.menor>button:hover {
+  width: 270px;
+  height: 60px;
+}
+.MinEu~.menor>button {
+  width: 220px;
+  height: 60px;
+  font-size: 1.5rem;
+  margin-top: 40px;
+}
+#mais {
+  left: 50%;
+  top: -150px;
+  grid-template-columns: auto;
+  transform: translate(-65%);
+}
+.espaco{
+  display: none;
+}
+#escuro{
+  position: relative;
+  right: 30px;
+}
+}
+
+@media (max-width: 380px){
+  .btn{
+    transform: translate(-40%);
+  }
+      .btn button {
+        width: 260px;
+    }
+    #titulo::after{
+      left: 5rem;
+    }
+    a:hover>button {
+        width: 252px;
+        height: 60px;
+    }.btn>a {
+        width: 260px;
+    }
+.menor>button {
+  width: 180px;
+}
+.menor>button:hover {
+  width: 180px;
+}
+.MinEu~.menor>button {
+        width: 180px;
+    }
+    #mais {
+      width: 300px;
+      transform: translate(-180%);
+       }
+    .left{
+      width: 300px;
+      display: flex;
+  margin-left: 370px;
+    }
+    .right{
+    left: 330px;
+    }
+}

@@ -1,0 +1,70 @@
+:root{
+    --contato-bg: #b9b4b4;
+    --stroke: #7a6a6a;
+}
+.darkmode{
+    --contato-bg: #2F2E2E;
+    --stroke: #404040;
+}
+#contato{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 310px;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    top: 39px;
+    color: var(--text);
+}
+.cont{
+    border: solid 8px var(--stroke);
+    background-color: var(--contato-bg);
+    height: 76px;
+    width: 80%;
+    display: block;
+    margin-top: 16px;
+    color: var(--text);
+}
+#mensagem{
+    margin-left: 20px;
+    width: 85%;
+    background-color: var(--contato-bg);
+    color: var(--text);
+    border: solid 8px var(--stroke);
+}
+.github{
+    left: 2%;
+}
+#git{
+    margin-top: 80px;
+}
+.hide2{
+    display: none;
+}
+@media (max-width: 750px) {
+    #contato{
+        grid-template-columns: auto;
+        height: auto;
+    }
+    #mensagem{
+        position: relative;
+        bottom: 80px;
+        width: 85%;
+        height: 160px;
+    }
+    .hide{
+        display: none;
+    }
+    .hide2{
+        position: relative;
+        bottom: 80px;
+        display: block;
+    }
+    .github{
+        width: 90%;
+    }
+    .gitin{
+        width: 103%;
+        left: -2%;
+    }
+}

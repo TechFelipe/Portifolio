@@ -1,0 +1,44 @@
+:root{
+    --hab: #A19F9F;
+}
+.darkmode{
+    --hab: #3B3A3A;
+}
+#habtit{
+    margin-left: 8%;
+    margin-top: 35px;
+    width: 85%;
+    background-color: var(--hab);
+    font-family: 'minecraftia';
+    color: var(--text);
+    text-align: center;
+    font-size: 25px;
+}
+#hab{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 8%;
+    width: 85%;
+    background-color: var(--hab);
+}
+#hab p{
+    position: relative;
+    bottom: 55px;
+    font-family: 'minecraftia';
+    font-size: 25px;
+    text-align: center;
+    margin-top: 85px;
+    color: var(--text);
+}
+@media (max-width: 750px){
+#hab{
+    grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 370px){
+    #hab{
+        padding-top: 35px;
+        grid-template-columns: auto;
+    }
+    
+}
