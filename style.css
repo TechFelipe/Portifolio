@@ -340,10 +340,10 @@ a:hover>button {
       font-size: 1.2rem;
             width: 180px;
     }
-    .menor>button {
+    #escuro~.menor>button {
       width: 190px;
     }
-    .menor>button:hover {
+    #escuro~.menor>button:hover {
       width: 190px;
     }
 
