@@ -8,7 +8,6 @@ body {
   background-repeat: no-repeat;
   background-position: center; /* Keeps the image centered */
   height: 100vh;
-  width: 100vw;
   margin: auto;
   transition: 0.3s;
   overflow-x:hidden;
@@ -300,13 +299,62 @@ a:hover>button {
   right: 30px;
 }
 }
-
-@media (max-width: 380px){
+@media (max-width: 600px){
+  #titulo::before{
+    font-size: 3.5rem;
+  }
+  #titulo::after{
+    left: 5rem;
+  }
   .btn{
     transform: translate(-40%);
   }
       .btn button {
+        width: 300px;
+    }
+    a:hover>button {
+        width: 242px;
+        height: 60px;
+    }.btn>a {
+        width: 250px;
+    }
+    #mais {
+      width: 300px;
+      transform: translate(-185%);
+       }
+    .left{
+      width: 350px;
+      display: flex;
+  margin-left: 370px;
+    }
+    .right{
+    left: 350px;
+    }
+    .menor>button {
+      width: 180px;
+    }
+    .menor>button:hover {
+      width: 160px;
+    }
+    .MinEu~.menor>button {
+      font-size: 1.2rem;
+            width: 180px;
+        }
+
+}
+@media (max-width: 390px){
+  #titulo:after {
+    left: 6rem;
+    top: 0.5rem;
+    font-size: 1.2rem;
+  }
+  .btn{
+    width: 260px;
+    transform: translate(-45%);
+  }
+      .btn button {
         width: 260px;
+        margin: auto;
     }
     #titulo::after{
       left: 5rem;
@@ -323,20 +371,23 @@ a:hover>button {
 .menor>button:hover {
   width: 180px;
 }
+#mais {
+  width: 260px;
+  transform: translate(-200%);
+}.MinEu{
+  width: 180px;
+}
 .MinEu~.menor>button {
-        width: 180px;
+  font-size: 1.2rem;
+  transform: translate(-5%);
+  width: 160px;
     }
-    #mais {
-      width: 300px;
-      transform: translate(-180%);
-       }
     .left{
-      width: 300px;
+      width: 280px;
       display: flex;
-  margin-left: 370px;
+  margin-left: 380px;
     }
     .right{
     left: 330px;
     }
-
 }
