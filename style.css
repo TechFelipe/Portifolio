@@ -309,11 +309,20 @@ a:hover>button {
   .btn{
     transform: translate(-40%);
   }
+    .menor>button {
+      width: 180px;
+    }
+    .menor>button:hover {
+      width: 180px;
+    }
       .btn button {
         width: 300px;
     }
+    .btn>a:hover {
+      width: 302px;
+  }
     a:hover>button {
-        width: 242px;
+        width: 294px;
         height: 60px;
     }.btn>a {
         width: 250px;
@@ -329,12 +338,6 @@ a:hover>button {
     }
     .right{
     left: 350px;
-    }
-    .menor>button {
-      width: 180px;
-    }
-    .menor>button:hover {
-      width: 160px;
     }
     .MinEu~.menor>button {
       font-size: 1.2rem;
@@ -362,11 +365,15 @@ a:hover>button {
     a:hover>button {
         width: 252px;
         height: 60px;
-    }.btn>a {
+    }
+    .btn>a {
         width: 260px;
     }
 .menor>button {
   width: 180px;
+}
+.btn>a:hover{
+  width: 260px
 }
 .menor>button:hover {
   width: 180px;
