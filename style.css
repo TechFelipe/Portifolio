@@ -309,9 +309,6 @@ a:hover>button {
   .btn{
     transform: translate(-40%);
   }
-    .menor>button {
-      width: 180px;
-    }
     .menor>button:hover {
       width: 180px;
     }
@@ -321,6 +318,9 @@ a:hover>button {
     .btn>a:hover {
       width: 302px;
   }
+    .menor>button {
+      width: 200px;
+    }
     a:hover>button {
         width: 294px;
         height: 60px;
@@ -334,7 +334,7 @@ a:hover>button {
     .left{
       width: 350px;
       display: flex;
-  margin-left: 370px;
+  margin-left: 400px;
     }
     .right{
     left: 350px;
