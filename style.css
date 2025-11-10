@@ -318,9 +318,6 @@ a:hover>button {
     .btn>a:hover {
       width: 302px;
   }
-    .menor>button {
-      width: 200px;
-    }
     a:hover>button {
         width: 294px;
         height: 60px;
@@ -334,7 +331,7 @@ a:hover>button {
     .left{
       width: 350px;
       display: flex;
-  margin-left: 400px;
+      margin-left: 400px;
     }
     .right{
     left: 350px;
@@ -342,7 +339,13 @@ a:hover>button {
     .MinEu~.menor>button {
       font-size: 1.2rem;
             width: 180px;
-        }
+    }
+    .menor>button {
+      width: 190px;
+    }
+    .menor>button:hover {
+      width: 190px;
+    }
 
 }
 @media (max-width: 390px){
