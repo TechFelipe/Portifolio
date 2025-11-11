@@ -64,6 +64,7 @@ document.querySelectorAll("input, textarea").forEach((element) => {
 });
 
 function Enviar() {
+    const emailInput = document.getElementById("mail");
     if (emailInput && emailInput.value.includes("@")) {
         alert("Enviado com sucesso");
     } else {
