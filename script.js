@@ -52,3 +52,21 @@ addEventListener("DOMContentLoaded", () => {
             break;
     }
 });
+
+
+document.querySelectorAll("input, textarea").forEach((element) => {
+    element.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+            event.preventDefault(); // Impede o comportamento padrão do Enter
+            element.blur(); // Remove o foco do campo atual
+        }
+    });
+});
+
+function Enviar() {
+    if (emailInput && emailInput.value.includes("@")) {
+        alert("Enviado com sucesso");
+    } else {
+        alert("Por favor, insira um e-mail válido");
+    }
+}
